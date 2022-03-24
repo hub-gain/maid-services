@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  jupyter:
+    image: jupyter/minimal-notebook:latest
+    container_name: jupyter
+    volumes:
+      - ./notebooks:/home/jovyan
+    ports:
+      - 8888:8888
+    restart: unless-stopped

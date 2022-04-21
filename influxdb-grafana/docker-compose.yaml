@@ -3,7 +3,7 @@ version: "3"
 services:
   influxdb:
     container_name: influxdb
-    image: influxdb:latest
+    image: influxdb:2.2.0
     restart: unless-stopped
     ports:
       - "8086:8086"
@@ -11,7 +11,7 @@ services:
       - influxdb-data:/var/lib/influxdb2:rw
   grafana:
     container_name: grafana
-    image: grafana/grafana-oss:latest
+    image: grafana/grafana-oss:8.4.7
     restart: unless-stopped
     ports:
       - "3000:3000"

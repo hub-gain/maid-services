@@ -310,7 +310,7 @@ CREATE TABLE `Sequenzen` (
   `Piezo_Spiegel_Orientierung` double DEFAULT NULL,
   PRIMARY KEY (`ID`),
   KEY `firsttime` (`Nr_firsttime`)
-) ENGINE=MyISAM AUTO_INCREMENT=4089639 DEFAULT CHARSET=latin1 COLLATE=latin1_german1_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 COLLATE=latin1_german1_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

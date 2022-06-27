@@ -9,15 +9,9 @@ services:
       - "3306:3306"
     volumes:
       - mariadb-data:/var/lib/mysql
-    environment:
-      MARIADB_ROOT_PASSWORD: ${MARIADB_ROOT_PASSWORD}
 
-  adminer:
-    container_name: adminer
-    image: adminer
-    restart: unless-stopped
-    ports:
-      - 8080:8080
+    environment:
+      MARIADB_ROOT_PASSWORD: "${MARIADB_ROOT_PASSWORD}"
 
 volumes:
   mariadb-data:

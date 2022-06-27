@@ -31,7 +31,7 @@ Settings are as follows:
 
 * To recreate possible offending keys run `ssh-keygen -R 192.168.123.4` on the client side
 * Upload your public key:
-  * In Windows PowerShell ([source](https://www.chrisjhart.com/Windows-10-ssh-copy-id/)): `type $env:USERPROFILE\.ssh\id_rsa.pub | ssh gain@192.168.123.4"cat >> .ssh/authorized_keys"`
+  * In Windows PowerShell ([source](https://www.chrisjhart.com/Windows-10-ssh-copy-id/)): `type $env:USERPROFILE\.ssh\id_rsa.pub | ssh gain@192.168.123.4 "cat >> .ssh/authorized_keys"`
   * Under Linux use `copy-id`
 
 ### Install portainer

@@ -29,7 +29,7 @@ CREATE TABLE `AO_Waveforms` (
   `Spannung` double NOT NULL,
   PRIMARY KEY (`ID`),
   KEY `waveformnr` (`Waveform_Nr`)
-) ENGINE=MyISAM AUTO_INCREMENT=371312267 DEFAULT CHARSET=latin1 COLLATE=latin1_german1_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 COLLATE=latin1_german1_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -53,7 +53,7 @@ CREATE TABLE `ChirpDDS_Sequenzen` (
   `Stopzeit` double unsigned NOT NULL,
   PRIMARY KEY (`ID`),
   KEY `DDS1seqnrindex` (`DDS1_Sequenz_Nr`)
-) ENGINE=MyISAM AUTO_INCREMENT=24266340 DEFAULT CHARSET=latin1 COMMENT='Tabelle fuer die chirpbaren DDS';
+) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 COMMENT='Tabelle fuer die chirpbaren DDS';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -75,7 +75,7 @@ CREATE TABLE `DDS_Sequenzen` (
   `Haltezeit` double unsigned NOT NULL,
   PRIMARY KEY (`ID`),
   KEY `ddssequenznr` (`DDS_Sequenz_Nr`)
-) ENGINE=MyISAM AUTO_INCREMENT=91284988 DEFAULT CHARSET=latin1 COLLATE=latin1_german1_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 COLLATE=latin1_german1_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -115,7 +115,7 @@ CREATE TABLE `Laserleistungen` (
   `airpressure` decimal(6,2) DEFAULT NULL COMMENT 'Air Pressure data from GAIN sensor in hPa',
   `sensor_temp` decimal(4,2) DEFAULT NULL COMMENT 'Temperature sensor of the air pressure sensor in Celsius',
   PRIMARY KEY (`ID`)
-) ENGINE=MyISAM AUTO_INCREMENT=4849459 DEFAULT CHARSET=latin1 COMMENT='Photodiodenwerte aus Lasersystem und MOT-Teleskopen';
+) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 COMMENT='Photodiodenwerte aus Lasersystem und MOT-Teleskopen';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -186,7 +186,7 @@ CREATE TABLE `Messungen` (
   `Delta_10MHz` float DEFAULT NULL COMMENT 'Difference: GAIN 10MHz - GPS 10MHz in Hz',
   `IonPumpCurrent` decimal(3,2) DEFAULT NULL COMMENT 'Output of the Ion pump (V) - for calculation of its current',
   PRIMARY KEY (`ID`)
-) ENGINE=MyISAM AUTO_INCREMENT=4089339 DEFAULT CHARSET=latin1 COLLATE=latin1_german1_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 COLLATE=latin1_german1_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -263,7 +263,7 @@ CREATE TABLE `Sequenz_Arrays` (
   `Aktiviert` tinyint(1) NOT NULL DEFAULT '1',
   PRIMARY KEY (`ID`),
   KEY `arraynr` (`Array_Nr`)
-) ENGINE=MyISAM AUTO_INCREMENT=171226169 DEFAULT CHARSET=latin1 COLLATE=latin1_german1_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 COLLATE=latin1_german1_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

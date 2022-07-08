@@ -1,8 +1,8 @@
 # MariaDB
 
-Set root `MARIADB_ROOT_PASSWORD` password in Portainer!
+Set `MARIADB_ROOT_PASSWORD` environment variable in Portainer!
 
-Use [HeideSQL](https://www.heidisql.com/) as GUI.
+Use [HeidiSQL](https://www.heidisql.com/) as GUI.
 
 ## User management
 In HeidiSQL:

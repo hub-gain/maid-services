@@ -10,10 +10,10 @@ Settings are as follows:
 
 ![](doc/general.png)
 ![](doc/os.png)
+![](doc/system.png)
 ![](doc/disks.png)
 ![](doc/cpu.png)
 ![](doc/memory.png)
-![](doc/system.png)
 ![](doc/network.png)
 
 ## Install Ubuntu
@@ -23,7 +23,13 @@ Settings are as follows:
 ![](doc/ubuntu_partitions.png)
 
 * Install docker if prompted.
-* Check that the IP address is `192.168.123.4`
+* Allow SSH
+* Reboot
+* `sudo apt update && sudo apt upgrade`
+* In router: change IP address to `192.168.123.4`
+* Install guest agent:
+  * `sudo apt install qemu-guest-agent`
+  * in proxmox: activate guest agent under options
 
 ## Setup Ubuntu
 

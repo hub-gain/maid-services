@@ -225,7 +225,6 @@ CREATE TABLE IF NOT EXISTS `Messungen` (
   `Messreihen_ID` int(10) unsigned NOT NULL,
   `Messwert_Nr` int(10) unsigned NOT NULL,
   `Messzeit` double unsigned NOT NULL,
-  `Image` binary(1) DEFAULT NULL,
   `Scanwert` double DEFAULT NULL,
   `Messungstyp` enum('k+_AOM-Faktor','k+_Flanken','k+_Scannen','k-_AOM-Faktor','k-_Flanken','k-_Scannen','') COLLATE latin1_german1_ci DEFAULT NULL,
   `Timing_Fehler` tinyint(1) NOT NULL,

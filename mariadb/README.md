@@ -20,4 +20,4 @@ In HeidiSQL:
 
 * Create a new database, e.g. named `atominterferometer2022` and select it
 
-* Restore the database schema by lorunningading the `ai*.sql` file via File -> Run SQL file
+* Restore the database schema by running the `ai*.sql` file via File -> Run SQL file

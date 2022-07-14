@@ -211,7 +211,7 @@ CREATE TABLE IF NOT EXISTS `Messreihen` (
   `RamanMasterIntensityBeforeAdjustment` decimal(4,3) DEFAULT NULL COMMENT 'Raman Master Intensity from Photodiode BEFORE adjustment',
   `RamanSlaveIntensityBeforeAdjustment` decimal(4,3) DEFAULT NULL COMMENT 'Raman Slave Intensity from Photodiode BEFORE adjustment',
   PRIMARY KEY (`ID`) USING BTREE
-) ENGINE=MyISAM AUTO_INCREMENT=9642 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 -- Data exporting was unselected.
 

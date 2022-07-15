@@ -8,7 +8,7 @@
 * On old host:
     * Copy backup files: `docker cp influxdb:/home/influxdb/backup/. ./influxdb-backup` 
 * On client:
-    * Copy files: `scp -r maid@192.168.123.11:/home/maid/influxdb-backup .`
+    * Copy files: `scp -r maid@192.168.123.4:/home/maid/influxdb-backup .`
 
 ### Restore on new container
 * On client:
@@ -19,7 +19,7 @@
     * `influx restore /home/influxdb/backup/ -t <admin-token>`
     * Might have to delete existing bucket in the GUI
 
-## Create users
+## Create tokens
 Two users `ro` (read-only) and `rw` (read-write)
 
 # Grafana

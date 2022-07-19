@@ -421,7 +421,7 @@
           },
           "folderName": "General",
           "folderUid": "",
-          "updated": "2022-07-19T12:11:52Z",
+          "updated": "2022-07-19T14:35:11Z",
           "updatedBy": {
             "avatarUrl": "/avatar/46d229b033af06a191ff2267bca9ae56",
             "id": 1,
@@ -431,7 +431,7 @@
         "name": "Reference Laser (Control Signal)",
         "type": "timeseries",
         "uid": "qlQWCtgVz",
-        "version": 2
+        "version": 3
       },
       "options": {
         "legend": {
@@ -450,7 +450,7 @@
             "type": "influxdb",
             "uid": "FZhluZR4z"
           },
-          "query": "from(bucket: \"gain\")\r\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\r\n  |> filter(fn: (r) => r[\"_measurement\"] == \"linien-reference\" and r[\"_field\"] == \"control_signal_mean\")\r\n  |> map(fn: (r) => ({r with _value: r._value * 500.0}))\r\n  |> aggregateWindow(every: v.windowPeriod, fn: last, createEmpty: false)\r\n  |> yield(name: \"last\")",
+          "query": "from(bucket: \"gain\")\r\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\r\n  |> filter(fn: (r) => r[\"_measurement\"] == \"linien-reference\" and r[\"_field\"] == \"control_signal_mean\")\r\n  |> map(fn: (r) => ({r with _value: r._value * 1000.0}))\r\n  |> aggregateWindow(every: v.windowPeriod, fn: last, createEmpty: false)\r\n  |> yield(name: \"last\")",
           "refId": "A"
         }
       ],
@@ -854,7 +854,7 @@
           },
           "folderName": "General",
           "folderUid": "",
-          "updated": "2022-07-19T12:12:14Z",
+          "updated": "2022-07-19T14:35:23Z",
           "updatedBy": {
             "avatarUrl": "/avatar/46d229b033af06a191ff2267bca9ae56",
             "id": 1,
@@ -864,7 +864,7 @@
         "name": "Cooling Laser (Control Signal)",
         "type": "timeseries",
         "uid": "-3LFjpg4z",
-        "version": 2
+        "version": 3
       },
       "options": {
         "legend": {
@@ -883,7 +883,7 @@
             "type": "influxdb",
             "uid": "FZhluZR4z"
           },
-          "query": "from(bucket: \"gain\")\r\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\r\n  |> filter(fn: (r) => r[\"_measurement\"] == \"linien-cooling\" and r[\"_field\"] == \"control_signal_mean\")\r\n  |> map(fn: (r) => ({r with _value: r._value * 500.0}))\r\n  |> aggregateWindow(every: v.windowPeriod, fn: last, createEmpty: false)\r\n  |> yield(name: \"last\")",
+          "query": "from(bucket: \"gain\")\r\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\r\n  |> filter(fn: (r) => r[\"_measurement\"] == \"linien-cooling\" and r[\"_field\"] == \"control_signal_mean\")\r\n  |> map(fn: (r) => ({r with _value: r._value * 1000.0}))\r\n  |> aggregateWindow(every: v.windowPeriod, fn: last, createEmpty: false)\r\n  |> yield(name: \"last\")",
           "refId": "A"
         }
       ],
@@ -1285,7 +1285,7 @@
           },
           "folderName": "General",
           "folderUid": "",
-          "updated": "2022-07-19T12:12:33Z",
+          "updated": "2022-07-19T14:35:39Z",
           "updatedBy": {
             "avatarUrl": "/avatar/46d229b033af06a191ff2267bca9ae56",
             "id": 1,
@@ -1295,7 +1295,7 @@
         "name": "Repumper Laser (Control Signal)",
         "type": "timeseries",
         "uid": "9Kvtjtg4k",
-        "version": 2
+        "version": 3
       },
       "options": {
         "legend": {
@@ -1314,7 +1314,7 @@
             "type": "influxdb",
             "uid": "FZhluZR4z"
           },
-          "query": "from(bucket: \"gain\")\r\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\r\n  |> filter(fn: (r) => r[\"_measurement\"] == \"linien-repumper\" and r[\"_field\"] == \"control_signal_mean\")\r\n  |> map(fn: (r) => ({r with _value: r._value * 500.0}))\r\n  |> aggregateWindow(every: v.windowPeriod, fn: last, createEmpty: false)\r\n  |> yield(name: \"last\")",
+          "query": "from(bucket: \"gain\")\r\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\r\n  |> filter(fn: (r) => r[\"_measurement\"] == \"linien-repumper\" and r[\"_field\"] == \"control_signal_mean\")\r\n  |> map(fn: (r) => ({r with _value: r._value * 1000.0}))\r\n  |> aggregateWindow(every: v.windowPeriod, fn: last, createEmpty: false)\r\n  |> yield(name: \"last\")",
           "refId": "A"
         }
       ],
@@ -1351,6 +1351,6 @@
   "timezone": "",
   "title": "Lasers",
   "uid": "RQbijtgVk",
-  "version": 8,
+  "version": 9,
   "weekStart": ""
 }

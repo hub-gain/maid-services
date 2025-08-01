@@ -2,7 +2,7 @@
 ## Deploy
 
 * Navigate to the `influxdb-grafana` directory
-* Change the default usernames and passwords in the `.env` file
+* Change the default usernames and passwords in the `example.env` file and rename it to `.env`
 * Bring up the containers with `sudo docker compose up -d`
 
 ## Backup and restore old influxdb database

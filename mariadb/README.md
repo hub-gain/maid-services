@@ -2,7 +2,7 @@
 
 ## Deploy
 
-* Change `MARIADB_ROOT_PASSWORD` environment variable in `.env` to what you want.
+* Change the default password in the `example.env` file and rename it to `.env`
 * Bring up the container by navigating to the `mariadb` directory and running `sudo docker compose up -d`
 
 Use [HeidiSQL](https://www.heidisql.com/) as GUI.

@@ -2,8 +2,10 @@
 
 ## Deploy
 
-* Change the default password in the `example.env` file and rename it to `.env`
-* Bring up the container by navigating to the `mariadb` directory and running `sudo docker compose up -d`
+* Navigate to the `mariadb` directory
+* Make a copy of `example.env` and name it `.env`
+* Change the default usernames and passwords in the `.env` file
+* Bring up the container by running `sudo docker compose up -d`
 
 Use [HeidiSQL](https://www.heidisql.com/) as GUI.
 

@@ -1,6 +1,9 @@
 # MariaDB
 
-Set `MARIADB_ROOT_PASSWORD` environment variable in Portainer!
+## Deploy
+
+* Change `MARIADB_ROOT_PASSWORD` environment variable in `.env` to what you want.
+* Bring up the container by navigating to the `mariadb` directory and running `sudo docker compose up -d`
 
 Use [HeidiSQL](https://www.heidisql.com/) as GUI.
 

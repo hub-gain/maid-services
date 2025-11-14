@@ -199,3 +199,7 @@ cython_debug/
 
 jupyter/notebooks
 */.env
+
+# System files
+.DS_Store
+Thumbs.db

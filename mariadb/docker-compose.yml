@@ -3,6 +3,7 @@ services:
     container_name: mariadb
     image: mariadb:10.8
     restart: unless-stopped
+    command: --innodb-buffer-pool-size=2G
     ports:
       - "3306:3306"
     volumes:
